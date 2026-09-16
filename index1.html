@@ -1,0 +1,21 @@
+print("BUILT IN MODULES (Date and Time)")
+print("=================================")
+
+import time
+
+print("Seconds since 1 January 1970:")
+print(time.time())
+
+print("\nThe Time Structure:")
+print(time.localtime(time.time()))
+
+print("\nThe Formatted Time:")
+print(time.asctime(time.localtime(time.time())))
+
+print("\nWaiting for 5 seconds...")
+
+for i in range(5):
+    print(i + 1)
+    time.sleep(1)
+
+print("Done!")
